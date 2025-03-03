@@ -348,7 +348,7 @@ var HTMLComponent = /*#__PURE__*/ (function (_Component) {
         key: "builderInfo",
         get: function get() {
           return {
-            title: "HTML Element",
+            title: "HTML Element fsdfsdf",
             group: "layout",
             icon: "code",
             weight: 0,
