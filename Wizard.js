@@ -1023,7 +1023,7 @@ var Wizard = /*#__PURE__*/ (function (_Webform) {
 
             // Disable the button until done.
             buttonElement.setAttribute("disabled", "disabled");
-            // _this10.setLoading(buttonElement, true);
+            _this10.setLoading(buttonElement, true);
 
             // Call the button method, then re-enable the button.
             _this10[button.method]()
