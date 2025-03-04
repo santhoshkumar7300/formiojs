@@ -4784,8 +4784,6 @@ var Component = /*#__PURE__*/ (function (_Element) {
       {
         key: "setLoading",
         value: function setLoading(element, loading) {
-          console.log(element, loading, "LOADING FROM FUNCIONN");
-
           if (!element || element.loading === loading) {
             return;
           }

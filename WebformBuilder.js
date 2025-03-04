@@ -1696,7 +1696,7 @@ var WebformBuilder = /*#__PURE__*/ (function (_Component) {
         if (isShowSubmitButton) {
           form.components.push({
             type: "button",
-            label: "Submit",
+            label: "Submit gfhfgh",
             key: "submit",
             size: "md",
             block: false,
