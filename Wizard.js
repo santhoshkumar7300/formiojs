@@ -1023,18 +1023,15 @@ var Wizard = /*#__PURE__*/ (function (_Webform) {
 
             // Disable the button until done.
             buttonElement.setAttribute("disabled", "disabled");
-            _this10.setLoading(buttonElement, true);
-            console.log("TEST 0");
+            // _this10.setLoading(buttonElement, true);
+
             // Call the button method, then re-enable the button.
             _this10[button.method]()
               .then(function () {
-                console.log("TEST 1");
-
                 buttonElement.removeAttribute("disabled");
                 _this10.setLoading(buttonElement, false);
               })
               ["catch"](function () {
-                console.log("TEST 2");
                 buttonElement.removeAttribute("disabled");
                 _this10.setLoading(buttonElement, false);
               });
