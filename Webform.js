@@ -1403,7 +1403,7 @@ var Webform = /*#__PURE__*/function (_NestedDataComponent) {
         noValidate: true,
         noCheck: true
       });
-      this.setAlert('success', "<p>".concat(this.t('complete'), "</p>"));
+      // this.setAlert('success', "<p>".concat(this.t('complete'), "</p>"));
       // Cancel triggered saveDraft to prevent overriding the submitted state
       if (this.draftEnabled && (_this$triggerSaveDraf = this.triggerSaveDraft) !== null && _this$triggerSaveDraf !== void 0 && _this$triggerSaveDraf.cancel) {
         this.triggerSaveDraft.cancel();
