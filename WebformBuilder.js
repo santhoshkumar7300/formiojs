@@ -1693,19 +1693,19 @@ var WebformBuilder = /*#__PURE__*/ (function (_Component) {
           !this.options.noDefaultSubmitButton && !form.components.length;
 
         // Ensure there is at least a submit button.
-        if (isShowSubmitButton) {
-          form.components.push({
-            type: "button",
-            label: "Submit",
-            key: "submit",
-            size: "md",
-            block: false,
-            action: "submit",
-            disableOnInvalid: true,
-            theme: "primary",
-            style: { marginTop: "20px" },
-          });
-        }
+        // if (isShowSubmitButton) {
+        //   form.components.push({
+        //     type: "button",
+        //     label: "Submit",
+        //     key: "submit",
+        //     size: "md",
+        //     block: false,
+        //     action: "submit",
+        //     disableOnInvalid: true,
+        //     theme: "primary",
+        //     style: { marginTop: "20px" },
+        //   });
+        // }
         if (this.webform) {
           var shouldRebuild =
             !this.webform.form.components ||
