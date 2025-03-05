@@ -1696,13 +1696,14 @@ var WebformBuilder = /*#__PURE__*/ (function (_Component) {
         if (isShowSubmitButton) {
           form.components.push({
             type: "button",
-            label: "Submit fucku",
+            label: "Submit",
             key: "submit",
             size: "md",
             block: false,
             action: "submit",
             disableOnInvalid: true,
             theme: "primary",
+            style: { marginTop: "20px" },
           });
         }
         if (this.webform) {
