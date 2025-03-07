@@ -25,9 +25,7 @@
 //   return __p;
 // };
 
-Object.defineProperty(exports, "__esModule", {
-  value: true,
-});
+Object.defineProperty(exports, "__esModule", { value: true });
 exports.default = function (ctx) {
   var __t,
     __p = "",
@@ -36,13 +34,10 @@ exports.default = function (ctx) {
     __p += __j.call(arguments, "");
   }
   __p +=
-    // Changed from a div to an <aside> with a more semantic name and added a “modern-sidebar” class.
+    // Using an <aside> with the "accordion" class; added an inline lavender background.
     '<aside id="' +
     (ctx.groupId == null ? "" : ctx.groupId) +
-    '" class="accordion modern-sidebar ' +
-    (ctx.scrollEnabled ? "overflow-auto" : "") +
-    '" ref="sidebar">\n' +
-    // Wrapped the search input in a Bootstrap input-group for a cleaner modern look
+    '" class="accordion modern-sidebar" style="background-color: lavender;" ref="sidebar">\n' +
     '  <div class="input-group mb-3">\n' +
     '    <input type="search" class="form-control" ref="sidebar-search" placeholder="' +
     (ctx.t("Search field(s)") == null ? "" : ctx.t("Search field(s)")) +

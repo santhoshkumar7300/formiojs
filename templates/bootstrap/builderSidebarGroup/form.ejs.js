@@ -84,9 +84,7 @@
 //   return __p;
 // };
 
-Object.defineProperty(exports, "__esModule", {
-  value: true,
-});
+Object.defineProperty(exports, "__esModule", { value: true });
 exports.default = function (ctx) {
   var __t,
     __p = "",
@@ -95,60 +93,83 @@ exports.default = function (ctx) {
     __p += __j.call(arguments, "");
   }
   __p +=
-    // Updated card class names for a more modern feel using shadow and a custom class (modern-card)
-    '<div class="card modern-card shadow-sm" ref="group-panel-' +
+    // Using Bootstrap 5 accordion structure.
+    '<div class="accordion-item" ref="group-panel-' +
     (ctx.groupKey == null ? "" : ctx.groupKey) +
-    '">\n  <div class="card-header modern-card-header" id="heading-' +
+    '">\n' +
+    '  <h2 class="accordion-header" id="heading-' +
     (ctx.groupKey == null ? "" : ctx.groupKey) +
-    '">\n    <h5 class="mb-0">\n      <button\n        class="btn btn-link w-100 text-start modern-group-button"\n        type="button"\n        data-bs-toggle="collapse"\n        data-bs-target="#group-' +
+    '">\n' +
+    '    <button class="accordion-button" type="button" \n' +
+    '      data-bs-toggle="collapse" \n' +
+    '      data-bs-target="#group-' +
     (ctx.groupKey == null ? "" : ctx.groupKey) +
-    '"\n        data-bs-parent="#' +
-    (ctx.groupId == null ? "" : ctx.groupId) +
-    '"\n        aria-expanded="' +
+    '" \n' +
+    '      aria-expanded="' +
     (ctx.group.default ? "true" : "false") +
-    '"\n        aria-controls="group-' +
+    '" \n' +
+    '      aria-controls="group-' +
     (ctx.groupKey == null ? "" : ctx.groupKey) +
-    '"\n        ref="sidebar-anchor"\n      >\n        ' +
+    '" \n' +
+    '      ref="sidebar-anchor" \n' +
+    // Inline style details the lavender theme for the header button.
+    '      style="background-color: lavender; color: #000;">\n' +
+    "      " +
     (ctx.t(ctx.group.title, { _userInput: true }) == null
       ? ""
       : ctx.t(ctx.group.title, { _userInput: true })) +
-    '\n      </button>\n    </h5>\n  </div>\n  <div\n    id="group-' +
+    "\n" +
+    "    </button>\n" +
+    "  </h2>\n" +
+    '  <div id="group-' +
     (ctx.groupKey == null ? "" : ctx.groupKey) +
-    '"\n    class="collapse' +
+    '" class="accordion-collapse collapse' +
     (ctx.group.default ? " show" : "") +
-    '"\n    aria-labelledby="heading-' +
+    '" \n' +
+    '    aria-labelledby="heading-' +
     (ctx.groupKey == null ? "" : ctx.groupKey) +
-    '"\n    ref="sidebar-group"\n  >\n    <div id="group-container-' +
+    '" \n' +
+    '    data-bs-parent="#' +
+    (ctx.groupId == null ? "" : ctx.groupId) +
+    '" \n' +
+    '    ref="sidebar-group">\n' +
+    '    <div class="accordion-body" id="group-container-' +
     (ctx.groupKey == null ? "" : ctx.groupKey) +
-    '" class="card-body modern-card-body p-2" ref="sidebar-container">\n      ';
+    '" ref="sidebar-container" style="background-color: white;">\n';
   if (ctx.group.componentOrder.length || ctx.subgroups.length) {
-    __p += "\n        ";
     if (ctx.group.componentOrder) {
       ctx.group.componentOrder.forEach(function (componentKey) {
         __p +=
-          '\n          <span\n            ref="sidebar-component"\n            data-group="' +
+          "          <span\n" +
+          '            ref="sidebar-component"\n' +
+          '            data-group="' +
           (ctx.groupKey == null ? "" : ctx.groupKey) +
-          '"\n            data-key="' +
+          '"\n' +
+          '            data-key="' +
           (ctx.group.components[componentKey].key == null
             ? ""
             : ctx.group.components[componentKey].key) +
-          '"\n            data-type="' +
+          '"\n' +
+          '            data-type="' +
           (ctx.group.components[componentKey].schema.type == null
             ? ""
             : ctx.group.components[componentKey].schema.type) +
-          '"\n            class="btn btn-outline-primary btn-sm formcomponent drag-copy m-0"\n            tabindex="' +
+          '"\n' +
+          '            class="btn btn-outline-primary btn-sm formcomponent drag-copy m-0"\n' +
+          '            tabindex="' +
           (ctx.keyboardActionsEnabled ? 0 : -1) +
-          '"\n          >\n            ';
+          '"\n' +
+          "          >\n";
         if (ctx.group.components[componentKey].icon) {
           __p +=
-            '\n              <i class="' +
+            '              <i class="' +
             (ctx.iconClass(ctx.group.components[componentKey].icon) == null
               ? ""
               : ctx.iconClass(ctx.group.components[componentKey].icon)) +
-            '" style="margin-right: 5px;"></i>\n            ';
+            '" style="margin-right: 5px;"></i>\n';
         }
         __p +=
-          "\n            " +
+          "              " +
           (ctx.t(ctx.group.components[componentKey].title, {
             _userInput: true,
           }) == null
@@ -156,19 +177,19 @@ exports.default = function (ctx) {
             : ctx.t(ctx.group.components[componentKey].title, {
                 _userInput: true,
               })) +
-          "\n          </span>\n        ";
+          "\n          </span>\n";
       });
     }
     __p +=
-      "\n        " +
+      "        " +
       (ctx.subgroups.join("") == null ? "" : ctx.subgroups.join("")) +
-      "\n      ";
+      "\n";
   } else {
     __p +=
-      "\n        <div>" +
+      "        <div>" +
       (ctx.t("No Matches Found") == null ? "" : ctx.t("No Matches Found")) +
-      "</div>\n      ";
+      "</div>\n";
   }
-  __p += "\n    </div>\n  </div>\n</div>\n";
+  __p += "    </div>\n" + "  </div>\n" + "</div>\n";
   return __p;
 };
