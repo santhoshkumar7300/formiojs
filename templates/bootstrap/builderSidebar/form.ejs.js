@@ -24,7 +24,6 @@
 //   __p += "\n  </div>\n</div>\n";
 //   return __p;
 // };
-
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.default = function (ctx) {
   var __t,
@@ -34,14 +33,14 @@ exports.default = function (ctx) {
     __p += __j.call(arguments, "");
   }
   __p +=
-    // Using an <aside> with the "accordion" class; added an inline lavender background.
+    // Using an <aside> element with a lavender background.
     '<aside id="' +
     (ctx.groupId == null ? "" : ctx.groupId) +
-    '" class="accordion modern-sidebar" style="background-color: lavender;" ref="sidebar">\n' +
+    '" class="accordion builder-sidebar" style="background-color: lavender;" ref="sidebar">\n' +
     '  <div class="input-group mb-3">\n' +
-    '    <input type="search" class="form-control" ref="sidebar-search" placeholder="' +
+    '    <input class="form-control builder-sidebar_search" type="search" ref="sidebar-search" placeholder="' +
     (ctx.t("Search field(s)") == null ? "" : ctx.t("Search field(s)")) +
-    '" aria-label="Search">\n' +
+    '" aria-label="Search" />\n' +
     "  </div>\n" +
     '  <div ref="sidebar-groups">\n';
   ctx.groups.forEach(function (group) {

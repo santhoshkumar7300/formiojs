@@ -92,50 +92,54 @@ exports.default = function (ctx) {
   function print() {
     __p += __j.call(arguments, "");
   }
+
   __p +=
-    // Using Bootstrap 5 accordion structure.
-    '<div class="accordion-item" ref="group-panel-' +
+    // Using a card-based accordion layout for Bootstrap 4.
+    '<div class="card form-builder-panel" ref="group-panel-' +
     (ctx.groupKey == null ? "" : ctx.groupKey) +
     '">\n' +
-    '  <h2 class="accordion-header" id="heading-' +
+    '  <div class="card-header form-builder-group-header" id="heading-' +
     (ctx.groupKey == null ? "" : ctx.groupKey) +
     '">\n' +
-    '    <button class="accordion-button" type="button" \n' +
-    '      data-bs-toggle="collapse" \n' +
-    '      data-bs-target="#group-' +
+    '    <h5 class="mb-0 mt-0">\n' +
+    "      <button\n" +
+    '        class="btn btn-link w-100 text-left"\n' +
+    '        type="button"\n' +
+    '        data-toggle="collapse"\n' +
+    '        data-target="#group-' +
     (ctx.groupKey == null ? "" : ctx.groupKey) +
-    '" \n' +
-    '      aria-expanded="' +
+    '"\n' +
+    '        aria-expanded="' +
     (ctx.group.default ? "true" : "false") +
-    '" \n' +
-    '      aria-controls="group-' +
+    '"\n' +
+    '        aria-controls="group-' +
     (ctx.groupKey == null ? "" : ctx.groupKey) +
-    '" \n' +
-    '      ref="sidebar-anchor" \n' +
-    // Inline style details the lavender theme for the header button.
-    '      style="background-color: lavender; color: #000;">\n' +
-    "      " +
+    '"\n' +
+    '        ref="sidebar-anchor"\n' +
+    '        style="background-color: lavender; color: #000;">\n' +
+    "        " +
     (ctx.t(ctx.group.title, { _userInput: true }) == null
       ? ""
       : ctx.t(ctx.group.title, { _userInput: true })) +
-    "\n" +
-    "    </button>\n" +
-    "  </h2>\n" +
+    "\n      </button>\n" +
+    "    </h5>\n" +
+    "  </div>\n" +
     '  <div id="group-' +
     (ctx.groupKey == null ? "" : ctx.groupKey) +
-    '" class="accordion-collapse collapse' +
+    '" class="collapse' +
     (ctx.group.default ? " show" : "") +
-    '" \n' +
+    '"\n' +
     '    aria-labelledby="heading-' +
     (ctx.groupKey == null ? "" : ctx.groupKey) +
-    '" \n' +
-    '    data-bs-parent="#' +
+    '"\n' +
+    '    data-parent="#' +
     (ctx.groupId == null ? "" : ctx.groupId) +
-    '" \n' +
+    '"\n' +
     '    ref="sidebar-group">\n' +
-    '    <div class="accordion-body" id="group-container-' +
+    '    <div class="card-body" id="group-container-' +
     (ctx.groupKey == null ? "" : ctx.groupKey) +
     '" ref="sidebar-container" style="background-color: white;">\n';
+
   if (ctx.group.componentOrder.length || ctx.subgroups.length) {
     if (ctx.group.componentOrder) {
       ctx.group.componentOrder.forEach(function (componentKey) {
@@ -190,6 +194,7 @@ exports.default = function (ctx) {
       (ctx.t("No Matches Found") == null ? "" : ctx.t("No Matches Found")) +
       "</div>\n";
   }
-  __p += "    </div>\n" + "  </div>\n" + "</div>\n";
+
+  __p += "    </div>\n  </div>\n</div>\n";
   return __p;
 };
