@@ -68,7 +68,7 @@ exports.default = function (ctx) {
       '</button>\n      <button class="btn btn-secondary" style="margin-right: 10px;" ref="cancelButton">' +
       ((__t = ctx.t("Cancel")) == null ? "" : __t) +
       '</button>\n      <button class="btn btn-danger" ref="removeButton">' +
-      ((__t = ctx.t("Remove nxmxnm")) == null ? "" : __t) +
+      ((__t = ctx.t("Remove")) == null ? "" : __t) +
       "</button>\n    </div>\n  </div>\n  ";
   }
   __p += "\n</div>\n";
