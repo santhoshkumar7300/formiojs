@@ -61,13 +61,13 @@ exports.default = function (ctx) {
     }
     __p +=
       '\n    <div style="margin-top: 10px;">\n' +
-      '      <button class="btn btn-success" style="margin-right: 10px; border-radius: 5px; padding: 10px 20px; font-size: 14px; transition: background-color 0.3s ease;" ref="saveButton">' +
+      '      <button style="margin-right: 10px; border: none; border-bottom: 2px solid #28a745; background: transparent; padding: 8px 16px; font-size: 16px; cursor: pointer;" ref="saveButton">' +
       ((__t = ctx.t("Save")) == null ? "" : __t) +
       "</button>\n" +
-      '      <button class="btn btn-secondary" style="margin-right: 10px; border-radius: 5px; padding: 10px 20px; font-size: 14px; transition: background-color 0.3s ease;" ref="cancelButton">' +
+      '      <button style="margin-right: 10px; border: none; border-bottom: 2px solid #6c757d; background: transparent; padding: 8px 16px; font-size: 16px; cursor: pointer;" ref="cancelButton">' +
       ((__t = ctx.t("Cancel")) == null ? "" : __t) +
       "</button>\n" +
-      '      <button class="btn btn-danger" style="border-radius: 5px; padding: 10px 20px; font-size: 14px; transition: background-color 0.3s ease;" ref="removeButton">' +
+      '      <button style="border: none; border-bottom: 2px solid #dc3545; background: transparent; padding: 8px 16px; font-size: 16px; cursor: pointer;" ref="removeButton">' +
       ((__t = ctx.t("Remove")) == null ? "" : __t) +
       "</button>\n    </div>\n  </div>\n";
 
