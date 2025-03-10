@@ -62,14 +62,25 @@ exports.default = function (ctx) {
         ((__t = ctx.t(ctx.componentInfo.help)) == null ? "" : __t) +
         "\n    </div>\n    ";
     }
+    // __p +=
+    //   '\n    <div style="margin-top: 10px;">\n      <button class="btn btn-success" style="margin-right: 10px;" ref="saveButton">' +
+    //   ((__t = ctx.t("Save")) == null ? "" : __t) +
+    //   '</button>\n      <button class="btn btn-secondary" style="margin-right: 10px;" ref="cancelButton">' +
+    //   ((__t = ctx.t("Cancel")) == null ? "" : __t) +
+    //   '</button>\n      <button class="btn btn-danger" ref="removeButton">' +
+    //   ((__t = ctx.t("Remove")) == null ? "" : __t) +
+    //   "</button>\n    </div>\n  </div>\n  ";
     __p +=
-      '\n    <div style="margin-top: 10px;">\n      <button class="btn btn-success" style="margin-right: 10px;" ref="saveButton">' +
+      '\n    <div style="margin-top: 10px;">\n' +
+      '      <button class="btn btn-success" style="margin-right: 10px; border-radius: 5px; padding: 10px 20px; font-size: 14px; transition: background-color 0.3s ease;" ref="saveButton">' +
       ((__t = ctx.t("Save")) == null ? "" : __t) +
-      '</button>\n      <button class="btn btn-secondary" style="margin-right: 10px;" ref="cancelButton">' +
+      "</button>\n" +
+      '      <button class="btn btn-secondary" style="margin-right: 10px; border-radius: 5px; padding: 10px 20px; font-size: 14px; transition: background-color 0.3s ease;" ref="cancelButton">' +
       ((__t = ctx.t("Cancel")) == null ? "" : __t) +
-      '</button>\n      <button class="btn btn-danger" ref="removeButton">' +
+      "</button>\n" +
+      '      <button class="btn btn-danger" style="border-radius: 5px; padding: 10px 20px; font-size: 14px; transition: background-color 0.3s ease;" ref="removeButton">' +
       ((__t = ctx.t("Remove")) == null ? "" : __t) +
-      "</button>\n    </div>\n  </div>\n  ";
+      "</button>\n    </div>\n  </div>\n";
   }
   __p += "\n</div>\n";
   return __p;
