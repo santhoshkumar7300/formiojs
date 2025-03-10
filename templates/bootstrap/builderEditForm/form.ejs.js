@@ -61,13 +61,22 @@ exports.default = function (ctx) {
     }
     __p +=
       '\n    <div style="margin-top: 10px;">\n' +
-      '      <button style="margin-right: 10px; border: none; border-bottom: 2px solid #28a745; background: transparent; padding: 8px 16px; font-size: 16px; cursor: pointer;" ref="saveButton">' +
+      '      <button style="margin-right: 10px; border-radius: 2px; border: 1px solid #28a745; background-color: transparent; color: #28a745; padding: 8px 16px; font-size: 14px; transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;" ' +
+      "onmouseover=\"this.style.backgroundColor='#28a745'; this.style.color='#ffffff';\" " +
+      "onmouseout=\"this.style.backgroundColor='transparent'; this.style.color='#28a745';\" " +
+      'ref="saveButton">' +
       ((__t = ctx.t("Save")) == null ? "" : __t) +
       "</button>\n" +
-      '      <button style="margin-right: 10px; border: none; border-bottom: 2px solid #6c757d; background: transparent; padding: 8px 16px; font-size: 16px; cursor: pointer;" ref="cancelButton">' +
+      '      <button style="margin-right: 10px; border-radius: 2px; border: 1px solid #6c757d; background-color: transparent; color: #6c757d; padding: 8px 16px; font-size: 14px; transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;" ' +
+      "onmouseover=\"this.style.backgroundColor='#6c757d'; this.style.color='#ffffff';\" " +
+      "onmouseout=\"this.style.backgroundColor='transparent'; this.style.color='#6c757d';\" " +
+      'ref="cancelButton">' +
       ((__t = ctx.t("Cancel")) == null ? "" : __t) +
       "</button>\n" +
-      '      <button style="border: none; border-bottom: 2px solid #dc3545; background: transparent; padding: 8px 16px; font-size: 16px; cursor: pointer;" ref="removeButton">' +
+      '      <button style="border-radius: 2px; border: 1px solid #dc3545; background-color: transparent; color: #dc3545; padding: 8px 16px; font-size: 14px; transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;" ' +
+      "onmouseover=\"this.style.backgroundColor='#dc3545'; this.style.color='#ffffff';\" " +
+      "onmouseout=\"this.style.backgroundColor='transparent'; this.style.color='#dc3545';\" " +
+      'ref="removeButton">' +
       ((__t = ctx.t("Remove")) == null ? "" : __t) +
       "</button>\n    </div>\n  </div>\n";
 
