@@ -37,13 +37,33 @@ exports.default = function (ctx) {
     "\n    </div>\n    ";
   if (!ctx.preview) {
     __p +=
-      '\n    <div style="margin-top: 10px;">\n      <button class="btn btn-success" style="margin-right: 10px;" ref="saveButton">' +
+      '\n    <div style="margin-top: 10px;">\n' +
+      '      <button style="margin-right: 10px; border-radius: 2px; border: 1px solid #28a745; background-color: transparent; color: #28a745; padding: 8px 16px; font-size: 14px; transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;" ' +
+      "onmouseover=\"this.style.backgroundColor='#28a745'; this.style.color='#ffffff';\" " +
+      "onmouseout=\"this.style.backgroundColor='transparent'; this.style.color='#28a745';\" " +
+      'ref="saveButton">' +
       ((__t = ctx.t("Save")) == null ? "" : __t) +
-      '</button>\n      <button class="btn btn-secondary" style="margin-right: 10px;" ref="cancelButton">' +
+      "</button>\n" +
+      '      <button style="margin-right: 10px; border-radius: 2px; border: 1px solid #6c757d; background-color: transparent; color: #6c757d; padding: 8px 16px; font-size: 14px; transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;" ' +
+      "onmouseover=\"this.style.backgroundColor='#6c757d'; this.style.color='#ffffff';\" " +
+      "onmouseout=\"this.style.backgroundColor='transparent'; this.style.color='#6c757d';\" " +
+      'ref="cancelButton">' +
       ((__t = ctx.t("Cancel")) == null ? "" : __t) +
-      '</button>\n      <button class="btn btn-danger" ref="removeButton">' +
+      "</button>\n" +
+      '      <button style="border-radius: 2px; border: 1px solid #dc3545; background-color: transparent; color: #dc3545; padding: 8px 16px; font-size: 14px; transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;" ' +
+      "onmouseover=\"this.style.backgroundColor='#dc3545'; this.style.color='#ffffff';\" " +
+      "onmouseout=\"this.style.backgroundColor='transparent'; this.style.color='#dc3545';\" " +
+      'ref="removeButton">' +
       ((__t = ctx.t("Remove")) == null ? "" : __t) +
-      "</button>\n    </div>\n    ";
+      "</button>\n    </div>\n  </div>\n";
+    // __p +=
+    //   '\n    <div style="margin-top: 10px;">\n      <button class="btn btn-success" style="margin-right: 10px;" ref="saveButton">' +
+    //   ((__t = ctx.t("Save")) == null ? "" : __t) +
+    //   '</button>\n      <button class="btn btn-secondary" style="margin-right: 10px;" ref="cancelButton">' +
+    //   ((__t = ctx.t("Cancel")) == null ? "" : __t) +
+    //   '</button>\n      <button class="btn btn-danger" ref="removeButton">' +
+    //   ((__t = ctx.t("Remove")) == null ? "" : __t) +
+    //   "</button>\n    </div>\n    ";
   }
   __p += "\n  </div>\n  ";
   if (ctx.preview) {
