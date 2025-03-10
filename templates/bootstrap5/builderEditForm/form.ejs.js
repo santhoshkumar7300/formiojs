@@ -16,18 +16,18 @@ exports.default = function (ctx) {
     " " +
     ((__t = ctx.t("Component")) == null ? "" : __t) +
     "</p>\n  </div>\n  ";
-  if (ctx.helplinks) {
-    __p +=
-      '\n  <div class="col col-sm-6">\n    <div class="float-end" style="margin-right: 20px; margin-top: 10px">\n      <a href="' +
-      ((__t = ctx.t(ctx.helplinks + ctx.componentInfo.documentation)) == null
-        ? ""
-        : __t) +
-      '" target="_blank" rel="noopener noreferrer">\n        <i class="' +
-      ((__t = ctx.iconClass("new-window")) == null ? "" : __t) +
-      '"></i> ' +
-      ((__t = ctx.t("Help")) == null ? "" : __t) +
-      "\n      </a>\n    </div>\n  </div>\n  ";
-  }
+  // if (ctx.helplinks) {
+  //   __p +=
+  //     '\n  <div class="col col-sm-6">\n    <div class="float-end" style="margin-right: 20px; margin-top: 10px">\n      <a href="' +
+  //     ((__t = ctx.t(ctx.helplinks + ctx.componentInfo.documentation)) == null
+  //       ? ""
+  //       : __t) +
+  //     '" target="_blank" rel="noopener noreferrer">\n        <i class="' +
+  //     ((__t = ctx.iconClass("new-window")) == null ? "" : __t) +
+  //     '"></i> ' +
+  //     ((__t = ctx.t("Help")) == null ? "" : __t) +
+  //     "\n      </a>\n    </div>\n  </div>\n  ";
+  // }
   __p += '\n</div>\n<div class="row">\n  <div class="col component-edit-tabs ';
   if (ctx.preview) {
     __p += "col-sm-6";
