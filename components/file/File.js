@@ -1009,7 +1009,7 @@ var FileComponent = /*#__PURE__*/function (_Field) {
     key: "builderInfo",
     get: function get() {
       return {
-        title: 'File',
+        title: 'Files',
         group: 'premium',
         icon: 'file',
         documentation: '/userguide/form-building/premium-components#file',
