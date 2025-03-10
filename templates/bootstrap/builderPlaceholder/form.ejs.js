@@ -5,7 +5,7 @@ exports.default = function (ctx) {
   var __t,
     __p = "";
   __p +=
-    '<div\n  class="drag-and-drop-alert alert alert-info no-drag"\n  style="text-align:center;background-color:#fff;"\n  role="alert"\n  data-noattach="true"\n  data-position="' +
+    '<div\n  class="drag-and-drop-alert alert alert-info no-drag"\n  style="text-align:center;background-color:#fff;border:none;"\n  role="alert"\n  data-noattach="true"\n  data-position="' +
     ((__t = ctx.position) == null ? "" : __t) +
     '"\n>\n  ' +
     ((__t = ctx.t("Drag and Drop a form component")) == null ? "" : __t) +
