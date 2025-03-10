@@ -13,7 +13,7 @@ exports.default = function (ctx) {
     ((__t = ctx.groupKey) == null ? "" : __t) +
     '">\n  <div class="card-header form-builder-group-header" id="heading-' +
     ((__t = ctx.groupKey) == null ? "" : __t) +
-    '">\n    <h5 class="mb-0 mt-0 d-grid accordion-header">\n      <button\n  style="color:red;"      class="btn btn-block builder-group-button"\n        type="button"\n        data-toggle="collapse"\n        data-target="#group-' +
+    '">\n    <h5 class="mb-0 mt-0 d-grid accordion-header">\n      <button\n  style="color:#E6E6FA;border:2px solid #E6E6FA; background-color:#fff;"      class="btn btn-block  builder-group-button"\n        type="button"\n        data-toggle="collapse"\n        data-target="#group-' +
     ((__t = ctx.groupKey) == null ? "" : __t) +
     '"\n        data-parent="#' +
     ((__t = ctx.groupId) == null ? "" : __t) +
