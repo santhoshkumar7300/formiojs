@@ -49,7 +49,7 @@ exports.default = function (ctx) {
           ((__t = ctx.group.components[componentKey].schema.type) == null
             ? ""
             : __t) +
-          '"\n            class="btn btn-outline-primary btn-sm formcomponent drag-copy m-0"\n            tabindex="' +
+          '"\n            class="btn btn-outline-secondary btn-sm formcomponent drag-copy m-0"\n            tabindex="' +
           ((__t = ctx.keyboardActionsEnabled ? 0 : -1) == null ? "" : __t) +
           '"\n          >\n            ';
         if (ctx.group.components[componentKey].icon) {
