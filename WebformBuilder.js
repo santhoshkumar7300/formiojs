@@ -780,7 +780,7 @@ var WebformBuilder = /*#__PURE__*/ (function (_Component) {
           moveComponent: "single",
           copyComponent: "single",
           pasteComponent: "single",
-          editJson: "single",
+          // editJson: "single",
         });
         if (component.refs.copyComponent) {
           this.attachTooltip(component.refs.copyComponent, this.t("Copy"));
