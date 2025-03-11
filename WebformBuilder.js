@@ -838,22 +838,22 @@ var WebformBuilder = /*#__PURE__*/ (function (_Component) {
             }
           );
         }
-        if (component.refs.editJson) {
-          this.attachTooltip(component.refs.editJson, this.t("Edit JSON"));
-          component.addEventListener(
-            component.refs.editJson,
-            "click",
-            function () {
-              return _this3.editComponent(
-                component.schema,
-                parent,
-                false,
-                true,
-                component.component
-              );
-            }
-          );
-        }
+        // if (component.refs.editJson) {
+        //   this.attachTooltip(component.refs.editJson, this.t("Edit JSON"));
+        //   component.addEventListener(
+        //     component.refs.editJson,
+        //     "click",
+        //     function () {
+        //       return _this3.editComponent(
+        //         component.schema,
+        //         parent,
+        //         false,
+        //         true,
+        //         component.component
+        //       );
+        //     }
+        //   );
+        // }
         if (component.refs.removeComponent) {
           this.attachTooltip(component.refs.removeComponent, this.t("Remove"));
           component.addEventListener(
